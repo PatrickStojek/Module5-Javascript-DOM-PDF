@@ -17,3 +17,15 @@ imageList.forEach(image => {
     image.removeAttribute('class')
     image.setAttribute('alt', 'image of a cat')
 })
+
+const liElement = document.querySelector('li')
+if(liElement) {
+    console.log(
+        liElement.dataset.age,
+        liElement.dataset.city
+    )
+    liElement.setAttribute('data-age', '16')
+    liElement.dataset.age = '17'
+
+    console.log(liElement.dataset.age)
+}
