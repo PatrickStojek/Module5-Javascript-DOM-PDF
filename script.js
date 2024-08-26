@@ -29,3 +29,9 @@ if(liElement) {
 
     console.log(liElement.dataset.age)
 }
+
+const section = document.querySelector('.comments')
+if(section) {
+    section.id = 'newId'
+    section.setAttribute('id', 'evenNeverId')
+}
