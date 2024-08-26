@@ -34,4 +34,11 @@ const section = document.querySelector('.comments')
 if(section) {
     section.id = 'newId'
     section.setAttribute('id', 'evenNeverId')
+
+    const className = section.className
+
+    if(className.includes('comments')){
+        section.className =  ''
+    }
 }
+
