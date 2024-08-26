@@ -42,3 +42,8 @@ if(section) {
     }
 }
 
+if(section) {
+    const classtToRemove = 'comments--active'
+    section.classList.toggle(classtToRemove)
+    
+}
