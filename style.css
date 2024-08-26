@@ -5,3 +5,6 @@
 div {
     color: var(--color)!important;
 }
+ul {
+    list-style: none;
+}

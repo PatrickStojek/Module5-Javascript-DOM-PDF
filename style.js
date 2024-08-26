@@ -25,3 +25,19 @@ if(articleElement) {
     const firstArticle = document.querySelector('article:first-child')
     firstArticle.parentNode.insertBefore(newSection, firstArticle)
 }
+
+//////Element vs Node
+const ulElement = document.querySelector('ul')
+if(ulElement && ulElement.hasChildNodes) {
+    const children = ulElement.children;
+    console.log(children[0])
+    if(children[0].hasChildNodes) {
+        console.log('Pierwsze dziecko ma dzieci') //false
+    }
+    if(children[1].hasChildNodes) {
+        console.log('Drugie dziecko ma dzieci') //true
+    }
+    if(children[2].hasChildNodes) {
+        console.log('Trzecie dziecko ma dzieci') //true
+    }
+}
