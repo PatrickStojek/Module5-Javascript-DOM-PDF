@@ -11,3 +11,9 @@ if(fooEl) {
     }
     
 }
+const section2 = document.querySelector('#foo2')
+const imageList = section2.querySelectorAll('img')
+imageList.forEach(image => {
+    image.removeAttribute('class')
+    image.setAttribute('alt', 'image of a cat')
+})
