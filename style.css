@@ -1,0 +1,7 @@
+:root {
+    --color: #444;
+}
+
+div {
+    color: var(--color)!important;
+}
