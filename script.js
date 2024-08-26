@@ -45,5 +45,10 @@ if(section) {
 if(section) {
     const classtToRemove = 'comments--active'
     section.classList.toggle(classtToRemove)
-    
+
 }
+
+
+const section4 = document.querySelector('#foo4')
+const pElement = section4.querySelector('p')
+pElement.innerHTML = 'Tekst z <strong> ważną </strong> informacją'
