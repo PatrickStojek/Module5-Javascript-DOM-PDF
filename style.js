@@ -20,5 +20,8 @@ if(articleElement) {
     newSection.innerText = 'New Article!!!'
     newSection.dataset.label = 'some Text'
     newSection.id = 'commentsList'
-    articleElement.appendChild(newSection)
+   /*  articleElement.appendChild(newSection) */
+   ///or insert as first article
+    const firstArticle = document.querySelector('article:first-child')
+    firstArticle.parentNode.insertBefore(newSection, firstArticle)
 }
