@@ -60,3 +60,5 @@ const filterDuplicates = function(color, index, array) {
 console.log(
     favoriteColorsFlatten.filter(filterDuplicates)
 )
+
+///////////////////////
