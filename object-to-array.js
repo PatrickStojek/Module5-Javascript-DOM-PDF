@@ -22,5 +22,28 @@ const objectToArray = function(object) {
     return arrayFromObject
 }
 
-console.log(objectToArray(peopleObject))
-
+const namesObject = {
+    '00001': 'Ala', 
+    '00002': 'Ola',
+    '00003': 'Ela',
+    '00004': 'Iza'
+}
+/////////object to array usung entries propertys
+const objectToArray2 = function(object, keyPropertyName = 'id') {
+    const entries = Object.entries(object || {})
+    console.log(entries)
+    return entries.map((entry) => {
+        key = entry[0]
+        value = entry[1]
+        if(typeof value === 'object') {
+            value[keyPropertyName] = key
+            return value
+        } 
+            return {
+                [keyPropertyName]: key,
+                value: value,
+            }  
+    })
+}
+console.log(objectToArray2(peopleObject))
+console.log(objectToArray2(namesObject))
