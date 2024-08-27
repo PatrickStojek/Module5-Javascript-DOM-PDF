@@ -52,4 +52,11 @@ const removeDuplicates = function(array) {
 }
 removeDuplicates(favoriteColorsFlatten)
 
-///deleting duplicates using 
+///deleting duplicates using filter
+
+const filterDuplicates = function(color, index, array) {
+    return array.indexOf(color) === index
+}
+console.log(
+    favoriteColorsFlatten.filter(filterDuplicates)
+)
