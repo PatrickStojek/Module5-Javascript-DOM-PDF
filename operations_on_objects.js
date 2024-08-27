@@ -35,6 +35,21 @@ console.log(salaries)
 const favoriteColours = people.map((person) => {
     return person.favoriteColors
 })
-const favoriteColoursFlatten = favoriteColours.flat()
-console.log(favoriteColoursFlatten)
+const favoriteColorsFlatten = favoriteColours.flat()
 
+const removeDuplicates = function(array) {
+    console.log(array)
+    //deleting duplicates from array array using for loop
+    let arrayWithoutDuplicates = []
+
+    for(let i = 0; i < array.length; i++) {
+        if(!arrayWithoutDuplicates.includes(array[i])) {
+        arrayWithoutDuplicates = arrayWithoutDuplicates.concat(array[i])
+        } 
+    }
+    console.log(arrayWithoutDuplicates)
+
+}
+removeDuplicates(favoriteColorsFlatten)
+
+///deleting duplicates using 
