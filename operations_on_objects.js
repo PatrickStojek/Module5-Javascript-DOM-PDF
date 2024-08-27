@@ -30,3 +30,11 @@ const salaries = (
             .reduce(sumSalaries,0)
         );
 console.log(salaries)
+
+///creating array with workers favorite colors
+const favoriteColours = people.map((person) => {
+    return person.favoriteColors
+})
+const favoriteColoursFlatten = favoriteColours.flat()
+console.log(favoriteColoursFlatten)
+
